@@ -1,5 +1,5 @@
-# Simple Notes App for Kubernetes 
-This is a simple notes app built with React and Django.
+# Simple Notes App for Kubernetes.
+This is a simple notes app built with React and Django. This is make In kind Cluster, Tailor it according to your environment
 
 ## Requirements
 1. Python 3.9
