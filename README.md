@@ -13,7 +13,7 @@ git clone https://github.com/Devilspsychiccoder/django-notes-app.git
 ```
 2. Login to Docker
 ```
-docker login -u <dockeraccountname>
+docker login -u thatgeekcontainer
 ```
 3. Build the app
 ```
@@ -23,9 +23,13 @@ docker build -t notes-app .
 ```
 docker image tag notes-app-k8s:latest thatgeekcontainer/notes-app-k8s:latest
 ```
-3. Run the app
+5. Push the Docker Image to your Docker Hub Account
 ```
-docker run -d -p 8000:8000 notes-app:latest
+docker push thatgeekcontainer/notes-app-k8s:latest
+```
+6. Run the app
+```
+k apply -f .
 ```
 
 ## Nginx
