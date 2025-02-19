@@ -32,9 +32,7 @@ docker push thatgeekcontainer/notes-app-k8s:latest
 k apply -f .
 ```
 
-## Nginx
-
-Install Nginx reverse proxy to make this application available
-
-`sudo apt-get update`
-`sudo apt install nginx`
+7. Make sure you portforward to make the application running
+```
+kubectl port-forward service/notes-app-service 8000:8000 --address=0.0.0.0 &
+```
