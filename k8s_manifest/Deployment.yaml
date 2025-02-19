@@ -19,4 +19,5 @@ spec:
         - name: notes-app
           image: thatgeekcontainer/notes-app-k8s:latest
           ports:
-            - containerPort: 800
+            - containerPort: 8000
+      restartPolicy: Always  # Explicitly setting the restart policy
