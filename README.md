@@ -27,12 +27,17 @@ docker image tag notes-app-k8s:latest thatgeekcontainer/notes-app-k8s:latest
 ```
 docker push thatgeekcontainer/notes-app-k8s:latest
 ```
-6. Run the app
+6. Run the app. The yaml files are already created as deployment and service
 ```
 k apply -f .
 ```
-
 7. Make sure you portforward to make the application running
 ```
 kubectl port-forward service/notes-app-service 8000:8000 --address=0.0.0.0 &
 ```
+Troubleshooting Steps if encountered
+```
+Find the Process Using Port 8000. Run the following command to check which process is occupying port 8000:
+sudo lsof -i :8000
+If any other process listening to the port either kill it by sudo kill -9 <PID>
+or change the port and make sure to add the port in the inbound rule in the security group.
