@@ -29,7 +29,8 @@ docker push thatgeekcontainer/notes-app-k8s:latest
 ```
 6. Run the app. The yaml files are already created as deployment and service
 ```
-k apply -f .
+cd k8s_manifest
+kubectl apply -f .
 ```
 7. Make sure you portforward to make the application running
 ```
