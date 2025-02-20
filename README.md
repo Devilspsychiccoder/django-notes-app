@@ -43,4 +43,6 @@ sudo lsof -i :8000
 If any other process listening to the port either kill it by sudo kill -9 <PID>
 or change the port and make sure to add the port in the inbound rule in the security group.
 ```
+
+
 ![ERD Diagram](diagram.png)
