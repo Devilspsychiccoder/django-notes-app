@@ -42,3 +42,8 @@ Find the Process Using Port 8000. Run the following command to check which proce
 sudo lsof -i :8000
 If any other process listening to the port either kill it by sudo kill -9 <PID>
 or change the port and make sure to add the port in the inbound rule in the security group.
+```
+Diagram
+```
+![image](https://github.com/user-attachments/assets/fd98ee67-8bbc-4b90-adfe-c317dbf0511e)
+```
