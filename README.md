@@ -45,5 +45,5 @@ or change the port and make sure to add the port in the inbound rule in the secu
 ```
 Diagram
 ```
-![image](https://github.com/user-attachments/assets/fd98ee67-8bbc-4b90-adfe-c317dbf0511e)
+![Diagram Title](diagram.png)
 ```
